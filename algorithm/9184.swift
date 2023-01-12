@@ -1,4 +1,4 @@
-mport Foundation
+import Foundation
 
 var tmpArr1 = [Int](repeating: -99999999, count: 51)
 var tmpArr2 = [[Int]](repeating: tmpArr1, count: 51)
