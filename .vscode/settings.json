@@ -3,6 +3,8 @@
         "ios": "cpp",
         "queue": "cpp",
         "iostream": "cpp",
-        "deque": "cpp"
+        "deque": "cpp",
+        "tuple": "cpp",
+        "ostream": "cpp"
     }
 }
