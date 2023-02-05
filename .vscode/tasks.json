@@ -1,14 +1,34 @@
 {
+	// See https://go.microsoft.com/fwlink/?LinkId=733558
+	// for the documentation about the tasks.json format
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "cppbuild",
-			"label": "C/C++: clang++ 활성 파일 빌드",
+			"type": "shell",
+			"label": "clang++ build active file",
 			"command": "/usr/bin/clang++",
 			"args": [
 				"-std=c++17",
-				"-fcolor-diagnostics",
 				"-stdlib=libc++",
+				"-g",
+				"${workspaceFolder}/*.cpp",
+				"-o",
+				"${fileDirname}/${fileBasenameNoExtension}"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+		{
+			"type": "cppbuild",
+			"label": "C/C++: clang++ 활성 파일 빌드",
+			"command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++",
+			"args": [
+				"-fcolor-diagnostics",
 				"-fansi-escape-codes",
 				"-g",
 				"${file}",
@@ -25,7 +45,7 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"detail": "컴파일러: /usr/bin/clang++"
+			"detail": "컴파일러: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++"
 		}
 	]
-}
+  }

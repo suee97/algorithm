@@ -6,7 +6,6 @@
         "queue": "cpp",
         "stack": "cpp",
         "iosfwd": "cpp",
-        "ios": "cpp",
-        "__bit_reference": "cpp"
+        "ios": "cpp"
     }
 }
