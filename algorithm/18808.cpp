@@ -6,7 +6,6 @@ int board[50][50];
 int s_n, s_m;
 int curSticker[20][20];
 
-
 void initSticker() {
     for (int i = 0; i < 20; i++)
         for (int j = 0; j < 20; j++)
