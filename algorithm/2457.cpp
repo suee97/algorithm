@@ -49,7 +49,19 @@ int main() {
     }
     sort(v.begin(), v.end());
 
-
     
-    cout << cnt;
+
+    // cout << cnt << endl;
+    vector<pair<int, int>> v_out = v;
+    cout << endl << ">> 정렬" << endl;
+    while (!v_out.empty()) {
+        cout << v_out.back().first << ' ' << v_out.back().second << '\n';
+        v_out.pop_back();
+    }
+
+    cout << endl << ">> ans" << endl;
+    while(!ans.empty()) {
+        cout << ans.back().first << ' ' << ans.back().second << '\n';
+        ans.pop_back();
+    }
 }
