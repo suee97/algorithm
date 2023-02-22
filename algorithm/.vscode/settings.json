@@ -20,6 +20,7 @@
         "string_view": "cpp",
         "unordered_map": "cpp",
         "unordered_set": "cpp",
-        "queue": "cpp"
+        "queue": "cpp",
+        "ios": "cpp"
     }
 }
