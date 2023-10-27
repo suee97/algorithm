@@ -5,6 +5,14 @@
         "unordered_map": "cpp",
         "unordered_set": "cpp",
         "filesystem": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "__config": "cpp",
+        "new": "cpp",
+        "random": "cpp",
+        "istream": "cpp",
+        "string_view": "cpp"
     }
 }
